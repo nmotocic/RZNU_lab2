@@ -24,12 +24,24 @@
 	</head>
 	
 	<body>
+		<h2>Testing if your browser supports WebSockets</h2>
+		<div id="supported"></div>
+		<script type="text/javascript">
+			var message = "WebSockets are not supported";
+			if(window.WebSocket){
+				message = "WebSockets are supported on your browser";
+				var chat_window = document.getElementById("chat");
+				var message_input = document.getElementById("message_input");
+			}
+	
+			document.getElementById('supported').innerHTML = message;
+		</script>
+		
 		<input id="message_input" placeholder="Enter name"></input>
 		<div id="chat"></div>
 		
 		<script>
-			var chat_window = document.getElementById("chat");
-			var message_input = document.getElementById("message_input");
+			
 			var ws = new WebSocket("ws://127.0.0.1:5678");
 			
 			//Add message to the message view
