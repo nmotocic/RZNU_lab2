@@ -1,2 +1,2 @@
 # RZNU_lab2
- Druga labarotirjska vjezba iz predmeta Računarstvo zasnovano na uslugama
+ Druga laboratorijska vjezba iz predmeta Računarstvo zasnovano na uslugama
